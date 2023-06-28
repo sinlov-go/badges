@@ -50,8 +50,15 @@ $ echo "go mod vendor"
 
 ## Features
 
-- [ ] more perfect test case coverage
-- [ ] more perfect benchmark case
+- [X] generator support platform
+  - [https://img.shields.io](https://img.shields.io)
+- [X] generator different style
+  - [codecov](https://codecov.io)
+  - [golang](https://golang.org)
+  - [npm](https://www.npmjs.com)
+  - [rust](https://www.rust-lang.org)
+- [x] more perfect test case coverage
+- [x] more perfect benchmark case
 
 ## env
 
@@ -66,10 +73,8 @@ $ echo "go mod vendor"
 
 ## usage
 
-- use this template, replace list below
-  - `github.com/sinlov-go/badges` to your package name
-  - `sinlov-go` to your owner name
-  - `badges` to your project name
+- or [see pkg.go.dev](https://pkg.go.dev/github.com/sinlov-go/badges)
+- see [example](https://github.com/sinlov-go/badges/tree/main/example)
 
 # dev
 
