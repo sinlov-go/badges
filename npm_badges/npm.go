@@ -5,56 +5,110 @@ import (
 	"github.com/sinlov-go/badges"
 )
 
+// VersionLatest
+// See: https://shields.io/badges/npm-3
+func VersionLatest(pkg string) string {
+	return fmt.Sprintf(
+		"%s/npm/v/%s",
+		badges.ShieldsUrl, pkg,
+	)
+}
+
 // VersionLatestMarkdown
-// see: https://shields.io/badges/npm-3
+// See: https://shields.io/badges/npm-3
 func VersionLatestMarkdown(pkg string) string {
 	return fmt.Sprintf(
-		"[![npm version](%s/npm/v/%s)](https://www.npmjs.com/package/%s)",
-		badges.ShieldsUrl, pkg, pkg,
+		"[![npm version](%s)](https://www.npmjs.com/package/%s)",
+		VersionLatest(pkg), pkg,
 	)
 }
 
 // NodeLtsVersion
-// see: https://shields.io/badges/node-lts
+// See: https://shields.io/badges/node-lts
 func NodeLtsVersion(pkg string) string {
 	return fmt.Sprintf(
-		"[![node lts version](%s/node/v-lts/%s)](https://www.npmjs.com/package/%s)",
-		badges.ShieldsUrl, pkg, pkg,
+		"%s/node/v-lts/%s",
+		badges.ShieldsUrl, pkg,
+	)
+}
+
+// NodeLtsVersionMarkdown
+// See: https://shields.io/badges/node-lts
+func NodeLtsVersionMarkdown(pkg string) string {
+	return fmt.Sprintf(
+		"[![node lts version](%s)](https://www.npmjs.com/package/%s)",
+		NodeLtsVersion(pkg), pkg,
+	)
+}
+
+// License
+// See: https://shields.io/badges/npm-2
+func License(pkg string) string {
+	return fmt.Sprintf(
+		"%s/npm/l/%s",
+		badges.ShieldsUrl, pkg,
 	)
 }
 
 // LicenseMarkdown
-// see: https://shields.io/badges/npm-2
+// See: https://shields.io/badges/npm-2
 func LicenseMarkdown(pkg string) string {
 	return fmt.Sprintf(
-		"[![npm license](%s/npm/l/%s)](https://www.npmjs.com/package/%s)",
-		badges.ShieldsUrl, pkg, pkg,
+		"[![npm license](%s)](https://www.npmjs.com/package/%s)",
+		License(pkg), pkg,
+	)
+}
+
+// DownloadLatestTimes
+// See: https://shields.io/badges/npm-1
+func DownloadLatestTimes(pkg string) string {
+	return fmt.Sprintf(
+		"%s/npm/dt/%s",
+		badges.ShieldsUrl, pkg,
 	)
 }
 
 // DownloadLatestTimesMarkdown
-// see: https://shields.io/badges/npm-1
+// See: https://shields.io/badges/npm-1
 func DownloadLatestTimesMarkdown(pkg string) string {
 	return fmt.Sprintf(
-		"[![npm download times](%s/npm/dt/%s)](https://www.npmjs.com/package/%s)",
-		badges.ShieldsUrl, pkg, pkg,
+		"[![npm download times](%s)](https://www.npmjs.com/package/%s)",
+		DownloadLatestTimes(pkg), pkg,
+	)
+}
+
+// DownloadLatestMonth
+// See: https://shields.io/badges/npm-1
+func DownloadLatestMonth(pkg string) string {
+	return fmt.Sprintf(
+		"%s/npm/dm/%s",
+		badges.ShieldsUrl, pkg,
 	)
 }
 
 // DownloadLatestMonthMarkdown
-// see: https://shields.io/badges/npm-1
+// See: https://shields.io/badges/npm-1
 func DownloadLatestMonthMarkdown(pkg string) string {
 	return fmt.Sprintf(
-		"[![npm download month](%s/npm/dm/%s)](https://www.npmjs.com/package/%s)",
-		badges.ShieldsUrl, pkg, pkg,
+		"[![npm download month](%s)](https://www.npmjs.com/package/%s)",
+		DownloadLatestMonth(pkg), pkg,
+	)
+}
+
+// Collaborators
+// See: https://shields.io/badges/npm-collaborators
+func Collaborators(pkg string) string {
+	return fmt.Sprintf(
+		"%s/npm/collaborators/%s",
+		badges.ShieldsUrl, pkg,
 	)
 }
 
 // CollaboratorsMarkdown
-// see: https://shields.io/badges/npm-collaborators
+// See: https://shields.io/badges/npm-collaborators
 func CollaboratorsMarkdown(pkg string) string {
 	return fmt.Sprintf(
-		"[![npm collaborators](%s/npm/collaborators/%s)](https://www.npmjs.com/package/%s)",
-		badges.ShieldsUrl, pkg, pkg,
+		"[![npm collaborators](%s)](https://www.npmjs.com/package/%s)",
+		Collaborators(pkg), pkg,
 	)
 }

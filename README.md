@@ -73,8 +73,18 @@ $ echo "go mod vendor"
 
 ## usage
 
-- or [see pkg.go.dev](https://pkg.go.dev/github.com/sinlov-go/badges)
 - see [example](https://github.com/sinlov-go/badges/tree/main/example)
+- or [see pkg.go.dev](https://pkg.go.dev/github.com/sinlov-go/badges)
+
+```go
+import (
+    "github.com/sinlov-go/badges/codecov_badges"
+    "github.com/sinlov-go/badges/golang_badges"
+    "github.com/sinlov-go/badges/npm_badges"
+    "github.com/sinlov-go/badges/rust_badges"
+    "github.com/sinlov-go/badges/shields_badges"
+)
+```
 
 # dev
 

@@ -149,7 +149,7 @@ else
 endif
 
 cloc:
-	@echo "see: https://stackoverflow.com/questions/26152014/cloc-ignore-exclude-list-file-clocignore"
+	@echo "See: https://stackoverflow.com/questions/26152014/cloc-ignore-exclude-list-file-clocignore"
 	cloc --exclude-list-file=.clocignore .
 
 helpProjectRoot:
