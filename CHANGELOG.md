@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/sinlov-go/badges/compare/v1.2.0...v1.3.0) (2023-06-30)
+
+
+### ✨ Features
+
+* add node_badges.GitHubPackageJsonVersion and markdown ([4ec4500](https://github.com/sinlov-go/badges/commit/4ec4500dcdddee01daf5ce007c5af0b81274d1b2))
+
 ## [1.2.0](https://github.com/sinlov-go/badges/compare/v1.1.0...v1.2.0) (2023-06-30)
 
 
