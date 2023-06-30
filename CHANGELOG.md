@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/sinlov-go/badges/compare/v1.1.0...v1.2.0) (2023-06-30)
+
+
+### 🐛 Bug Fixes
+
+* shields_badges StaticBadge formatlabel content with - _ [[:space]] ([913e71c](https://github.com/sinlov-go/badges/commit/913e71c35e81bcc27c3c2aabd69476edc2b33d7f))
+
 ## [1.1.0](https://github.com/sinlov-go/badges/compare/v1.0.0...v1.1.0) (2023-06-29)
 
 
