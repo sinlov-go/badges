@@ -81,6 +81,7 @@ import (
     "github.com/sinlov-go/badges/codecov_badges"
     "github.com/sinlov-go/badges/golang_badges"
     "github.com/sinlov-go/badges/npm_badges"
+    "github.com/sinlov-go/badges/node_badges"
     "github.com/sinlov-go/badges/rust_badges"
     "github.com/sinlov-go/badges/shields_badges"
 )
