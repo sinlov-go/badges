@@ -16,6 +16,21 @@ func TestStaticBadge(t *testing.T) {
 	)
 
 	assert.Equal(t,
+		"https://img.shields.io/badge/rust-1.52.1--rc.1-blue",
+		shields_badges.StaticBadgeBlue(label, "1.52.1-rc.1"),
+	)
+
+	assert.Equal(t,
+		"https://img.shields.io/badge/rust-1.52.1_rc.1-blue",
+		shields_badges.StaticBadgeBlue(label, "1.52.1 rc.1"),
+	)
+
+	assert.Equal(t,
+		"https://img.shields.io/badge/rust-1.52.1__rc.1-blue",
+		shields_badges.StaticBadgeBlue(label, "1.52.1_rc.1"),
+	)
+
+	assert.Equal(t,
 		"https://img.shields.io/badge/rust-1.43.1-green",
 		shields_badges.StaticBadgeGreen(label, message),
 	)
