@@ -1,14 +1,14 @@
-[![golang-ci](https://github.com/sinlov-go/badges/actions/workflows/golang-ci.yml/badge.svg)](https://github.com/sinlov-go/badges/actions/workflows/golang-ci.yml)
-[![license](https://img.shields.io/github/license/sinlov-go/badges)](https://github.com/sinlov-go/badges)
 [![go mod version](https://img.shields.io/github/go-mod/go-version/sinlov-go/badges?label=go.mod)](https://github.com/sinlov-go/badges)
-[![GoDoc](https://godoc.org/github.com/sinlov-go/badges?status.png)](https://godoc.org/github.com/sinlov-go/badges/)
-[![GoReportCard](https://goreportcard.com/badge/github.com/sinlov-go/badges)](https://goreportcard.com/report/github.com/sinlov-go/badges)
+[![GoDoc](https://godoc.org/github.com/sinlov-go/badges?status.png)](https://godoc.org/github.com/sinlov-go/badges)
+[![goreportcard](https://goreportcard.com/badge/github.com/sinlov-go/badges)](https://goreportcard.com/report/github.com/sinlov-go/badges)
+[![GitHub license](https://img.shields.io/github/license/sinlov-go/badges)](https://github.com/sinlov-go/badges)
 [![codecov](https://codecov.io/gh/sinlov-go/badges/branch/main/graph/badge.svg)](https://codecov.io/gh/sinlov-go/badges)
-[![github release](https://img.shields.io/github/v/release/sinlov-go/badges?style=social)](https://github.com/sinlov-go/badges/releases)
+[![GitHub latest SemVer tag)](https://img.shields.io/github/v/tag/sinlov-go/badges)](https://github.com/sinlov-go/badges/tags)
+[![GitHub release)](https://img.shields.io/github/v/release/sinlov-go/badges)](https://github.com/sinlov-go/badges/releases)
 
 ## for what
 
-- this project used to github golang lib project
+- this project used to generate badge by golang
 
 ## Contributing
 
@@ -19,12 +19,14 @@ We welcome community contributions to this project.
 
 Please read [Contributor Guide](.github/CONTRIBUTING_DOC/CONTRIBUTING.md) for more information on how to get started.
 
+请阅读有关 [贡献者指南](.github/CONTRIBUTING_DOC/zh-CN/CONTRIBUTING.md) 以获取更多如何入门的信息
+
 ## depends
 
 in go mod project
 
 ```bash
-# warning use privte git host must set
+# warning use privte git host must set∑
 # global set for once
 # add private git host like github.com to evn GOPRIVATE
 $ go env -w GOPRIVATE='github.com'
