@@ -61,6 +61,6 @@ func DockerHubImagePull(user, repo string) string {
 // See: https://shields.io/badges/docker-pulls
 func DockerHubImagePullMarkdown(user, repo string) string {
 	return fmt.Sprintf(
-		"[![docker hub image size](%s)](https://hub.docker.com/r/%s/%s/tags?page=1&ordering=last_updated)",
+		"[![docker hub image pulls](%s)](https://hub.docker.com/r/%s/%s/tags?page=1&ordering=last_updated)",
 		DockerHubImagePull(user, repo), user, repo)
 }
