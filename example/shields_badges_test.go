@@ -123,7 +123,7 @@ func TestShieldsDocker(t *testing.T) {
 	)
 
 	assert.Equal(t,
-		"[![docker hub image size](https://img.shields.io/docker/pulls/sinlov/docker-rust-buster)](https://hub.docker.com/r/sinlov/docker-rust-buster/tags?page=1&ordering=last_updated)",
+		"[![docker hub image pulls](https://img.shields.io/docker/pulls/sinlov/docker-rust-buster)](https://hub.docker.com/r/sinlov/docker-rust-buster/tags?page=1&ordering=last_updated)",
 		shields_badges.DockerHubImagePullMarkdown(dockerUser, dockerRepo),
 	)
 }
