@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.1](https://github.com/sinlov-go/badges/compare/v1.3.0...v1.3.1) (2023-07-18)
+
+
+### 🐛 Bug Fixes
+
+* fix shields_badges.DockerHubImagePullMarkdown error ([65063f0](https://github.com/sinlov-go/badges/commit/65063f03afb5120c94d1e34f93a0a3c27050ed22))
+
 ## [1.3.0](https://github.com/sinlov-go/badges/compare/v1.2.0...v1.3.0) (2023-06-30)
 
 
