@@ -1,9 +1,18 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file. See [convention-change-log](https://github.com/convention-change/convention-change-log) for commit guidelines.
+
+## [1.3.2](https://github.com/sinlov-go/badges/compare/1.3.1...v1.3.2) (2024-01-26)
+
+### 🐛 Bug Fixes
+
+* fix rust_badges.DocsRsMarkdown error ([74fc5805](https://github.com/sinlov-go/badges/commit/74fc5805aada7a9718fe22c2b6250f1e5c41180d)), fix [#2](https://github.com/sinlov-go/badges/issues/2)
+
+### 📝 Documentation
+
+* add linguist-language ([efd63f62](https://github.com/sinlov-go/badges/commit/efd63f62cb575e6da068405cc4cf74e23fbae775))
 
 ### [1.3.1](https://github.com/sinlov-go/badges/compare/v1.3.0...v1.3.1) (2023-07-18)
-
 
 ### 🐛 Bug Fixes
 
@@ -11,13 +20,11 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [1.3.0](https://github.com/sinlov-go/badges/compare/v1.2.0...v1.3.0) (2023-06-30)
 
-
 ### ✨ Features
 
 * add node_badges.GitHubPackageJsonVersion and markdown ([4ec4500](https://github.com/sinlov-go/badges/commit/4ec4500dcdddee01daf5ce007c5af0b81274d1b2))
 
 ## [1.2.0](https://github.com/sinlov-go/badges/compare/v1.1.0...v1.2.0) (2023-06-30)
-
 
 ### 🐛 Bug Fixes
 
@@ -25,13 +32,11 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [1.1.0](https://github.com/sinlov-go/badges/compare/v1.0.0...v1.1.0) (2023-06-29)
 
-
 ### ✨ Features
 
 * add url generator for badge ([00dbc40](https://github.com/sinlov-go/badges/commit/00dbc406d940838402e37f861f07d1e02280b55d))
 
 ## 1.0.0 (2023-06-28)
-
 
 ### ✨ Features
 
