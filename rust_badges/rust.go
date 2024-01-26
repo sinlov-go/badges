@@ -51,7 +51,7 @@ func DocsRs(repo string) string {
 // See: https://shields.io/badges/docs-rs-1
 func DocsRsMarkdown(repo string) string {
 	return fmt.Sprintf(
-		"[![doc.rs](%s)](https://docs.rs//%s)",
+		"[![doc.rs](%s)](https://docs.rs/%s)",
 		DocsRs(repo), repo,
 	)
 }

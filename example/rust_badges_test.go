@@ -28,7 +28,7 @@ func TestGithubRust(t *testing.T) {
 		rust_badges.DocsRs(gitRepo),
 	)
 
-	assert.Equal(t, "[![doc.rs](https://img.shields.io/docsrs/reqwest)](https://docs.rs//reqwest)",
+	assert.Equal(t, "[![doc.rs](https://img.shields.io/docsrs/reqwest)](https://docs.rs/reqwest)",
 		rust_badges.DocsRsMarkdown(gitRepo),
 	)
 

@@ -24,7 +24,7 @@ ENV_RUN_INFO_ARGS=
 
 ## build dist env start
 # change to other build entrance
-ENV_ROOT_BUILD_ENTRANCE=cmd/main.go
+ENV_ROOT_BUILD_ENTRANCE=cmd/badges/main.go
 ENV_ROOT_BUILD_BIN_NAME=${ROOT_NAME}
 ENV_ROOT_BUILD_PATH=build
 ENV_ROOT_BUILD_BIN_PATH=${ENV_ROOT_BUILD_PATH}/${ENV_ROOT_BUILD_BIN_NAME}
@@ -123,7 +123,7 @@ init:
 	@echo "~> you can use [ make help ] see more task"
 	-go mod verify
 
-dep: modVerify modDownload modTidy modVendor
+dep: modVerify modDownload modTidy
 	@echo "-> just check depends below"
 
 style: modTidy modVerify modFmt modLintRun

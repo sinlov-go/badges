@@ -118,7 +118,7 @@ testIntegrationReportingHtml: pathCheckRootDist
 helpGoTestIntegration:
 	@echo "== go integration test help start"
 	@echo ""
-	@echo "integration tests coverage See: https://go.dev/testing/coverage/"
+	@echo "integration tests coverage see: https://go.dev/testing/coverage/"
 	@echo ""
 	@echo "make envGoTestIntegration          - show env for go integration test"
 	@echo "make cleanGoCoverDirRoot           - clean go cover dir root"

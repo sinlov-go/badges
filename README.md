@@ -105,7 +105,7 @@ $ make test testBenchmark
 add main.go file and run
 
 ```bash
-# run at env dev use cmd/main.go
+# run at env dev use cmd/badges/main.go
 $ make dev
 ```
 
