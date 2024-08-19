@@ -53,12 +53,15 @@ $ echo "go mod vendor"
 ## Features
 
 - [X] generator support platform
-  - [https://img.shields.io](https://img.shields.io)
+    - [https://img.shields.io](https://img.shields.io)
 - [X] generator different style
-  - [codecov](https://codecov.io)
-  - [golang](https://golang.org)
-  - [npm](https://www.npmjs.com)
-  - [rust](https://www.rust-lang.org)
+    - [github](https://github.com)
+    - [docker](https://hub.docker.com)
+    - [codecov](https://codecov.io)
+    - [golang](https://golang.org)
+    - [node](https://nodejs.org)
+    - [npm](https://www.npmjs.com)
+    - [rust](https://www.rust-lang.org)
 - [x] more perfect test case coverage
 - [x] more perfect benchmark case
 
@@ -79,14 +82,17 @@ $ echo "go mod vendor"
 - or [see pkg.go.dev](https://pkg.go.dev/github.com/sinlov-go/badges)
 
 ```go
+package main
+
 import (
-    "github.com/sinlov-go/badges/codecov_badges"
-    "github.com/sinlov-go/badges/golang_badges"
-    "github.com/sinlov-go/badges/npm_badges"
-    "github.com/sinlov-go/badges/node_badges"
-    "github.com/sinlov-go/badges/rust_badges"
-    "github.com/sinlov-go/badges/shields_badges"
+	"github.com/sinlov-go/badges/codecov_badges"
+	"github.com/sinlov-go/badges/golang_badges"
+	"github.com/sinlov-go/badges/npm_badges"
+	"github.com/sinlov-go/badges/node_badges"
+	"github.com/sinlov-go/badges/rust_badges"
+	"github.com/sinlov-go/badges/shields_badges"
 )
+
 ```
 
 # dev
