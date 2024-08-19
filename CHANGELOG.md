@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [convention-change-log](https://github.com/convention-change/convention-change-log) for commit guidelines.
 
+## [1.4.0](https://github.com/sinlov-go/badges/compare/1.3.2...v1.4.0) (2024-08-20)
+
+### BREAKING CHANGE:
+
+* Adjustments to MakefileUtils require updates to inclusion commands
+
+### ✨ Features
+
+* add HTML markdown support for various badges ([591cc88c](https://github.com/sinlov-go/badges/commit/591cc88c2283492d1c01458e450e1af1a6ba5491))
+
+* implement Dependabot updates and workflow improvements ([eefb975b](https://github.com/sinlov-go/badges/commit/eefb975bd5f6c545390adc56b268e113d61781e7))
+
+### 📝 Documentation
+
+* update badges in README and improve import section ([bbf57631](https://github.com/sinlov-go/badges/commit/bbf5763138ae6896346ef96632640d6fa2c4ee93))
+
+### 👷‍ Build System
+
+* update MakefileUtils for CI and code analysis improvements ([f0475916](https://github.com/sinlov-go/badges/commit/f0475916755f2d0c0f92352df7a5df491d91b55e))
+
 ## [1.3.2](https://github.com/sinlov-go/badges/compare/1.3.1...v1.3.2) (2024-01-26)
 
 ### 🐛 Bug Fixes
