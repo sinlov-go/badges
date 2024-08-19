@@ -21,6 +21,19 @@ func GithubLicenseMarkdown(user, repo string) string {
 		GithubLicense(user, repo), user, repo)
 }
 
+// GithubLicenseHtmlMarkdown
+//
+//	see https://shields.io/badges/git-hub
+//
+// size: badges.MarkdownImgSizes
+func GithubLicenseHtmlMarkdown(user, repo, size string) string {
+	htmlContent := fmt.Sprintf(badges.MarkdownImageFmt, GithubLicense(user, repo), badges.MarkdownImgAlign, size, "GitHub license", "GitHub license")
+	return fmt.Sprintf(
+		"[%s](https://github.com/%s/%s)",
+		htmlContent, user, repo,
+	)
+}
+
 // GithubLatestSemVerTag
 // See: https://shields.io/badges/git-hub-tag-latest-sem-ver-pre-release
 func GithubLatestSemVerTag(user, repo string) string {
@@ -40,6 +53,20 @@ func GithubLatestSemVerTagMarkdown(user, repo string) string {
 		GithubLatestSemVerTag(user, repo), user, repo)
 }
 
+// GithubLatestSemVerTagHtmlMarkdown
+//
+//	return html markdown for github tag latest
+//	See: https://shields.io/badges/git-hub-tag-latest-sem-ver-pre-release
+//
+// size: badges.MarkdownImgSizes
+func GithubLatestSemVerTagHtmlMarkdown(user, repo, size string) string {
+	htmlContent := fmt.Sprintf(badges.MarkdownImageFmt, GithubLatestSemVerTag(user, repo), badges.MarkdownImgAlign, size, "GitHub latest SemVer tag", "GitHub latest SemVer tag")
+	return fmt.Sprintf(
+		"[%s](https://github.com/%s/%s/tags)",
+		htmlContent, user, repo,
+	)
+}
+
 // GithubRelease
 // See: https://shields.io/badges/git-hub-release-release-name-instead-of-tag-name
 func GithubRelease(user, repo string) string {
@@ -54,6 +81,19 @@ func GithubReleaseMarkdown(user, repo string) string {
 	return fmt.Sprintf(
 		"[![GitHub release)](%s)](https://github.com/%s/%s/releases)",
 		GithubRelease(user, repo), user, repo)
+}
+
+// GithubReleaseHtmlMarkdown
+//
+//	see: https://shields.io/badges/git-hub-release-release-name-instead-of-tag-name
+//
+// size: badges.MarkdownImgSizes
+func GithubReleaseHtmlMarkdown(user, repo, size string) string {
+	htmlContent := fmt.Sprintf(badges.MarkdownImageFmt, GithubRelease(user, repo), badges.MarkdownImgAlign, size, "GitHub release", "GitHub release")
+	return fmt.Sprintf(
+		"[%s](https://github.com/%s/%s/releases)",
+		htmlContent, user, repo,
+	)
 }
 
 // GithubContributors
@@ -71,5 +111,18 @@ func GithubContributorsMarkdown(user, repo string) string {
 	return fmt.Sprintf(
 		"[![GitHub contributors)](%s)](https://github.com/%s/%s/graphs/contributors)",
 		GithubContributors(user, repo), user, repo,
+	)
+}
+
+// GithubContributorsHtmlMarkdown
+//
+//	see: https://shields.io/badges/git-hub-contributors
+//
+// size: badges.MarkdownImgSizes
+func GithubContributorsHtmlMarkdown(user, repo, size string) string {
+	htmlContent := fmt.Sprintf(badges.MarkdownImageFmt, GithubContributors(user, repo), badges.MarkdownImgAlign, size, "GitHub contributors", "GitHub contributors")
+	return fmt.Sprintf(
+		"[%s](https://github.com/%s/%s/graphs/contributors)",
+		htmlContent, user, repo,
 	)
 }
