@@ -23,6 +23,19 @@ func VersionLatestMarkdown(pkg string) string {
 	)
 }
 
+// VersionLatestHtmlMarkdown
+//
+//	see: https://shields.io/badges/npm-3
+//
+// size: badges.MarkdownImgSizes
+func VersionLatestHtmlMarkdown(pkg, size string) string {
+	htmlContent := fmt.Sprintf(badges.MarkdownImageFmt, VersionLatest(pkg), badges.MarkdownImgAlign, size, "npm version", "npm version")
+	return fmt.Sprintf(
+		"[%s](https://www.npmjs.com/package/%s)",
+		htmlContent, pkg,
+	)
+}
+
 // NodeLtsVersion
 // See: https://shields.io/badges/node-lts
 func NodeLtsVersion(pkg string) string {
@@ -38,6 +51,19 @@ func NodeLtsVersionMarkdown(pkg string) string {
 	return fmt.Sprintf(
 		"[![node lts version](%s)](https://www.npmjs.com/package/%s)",
 		NodeLtsVersion(pkg), pkg,
+	)
+}
+
+// NodeLtsVersionHtmlMarkdown
+//
+//	see: https://shields.io/badges/node-lts
+//
+// size: badges.MarkdownImgSizes
+func NodeLtsVersionHtmlMarkdown(pkg, size string) string {
+	htmlContent := fmt.Sprintf(badges.MarkdownImageFmt, NodeLtsVersion(pkg), badges.MarkdownImgAlign, size, "node lts version", "node lts version")
+	return fmt.Sprintf(
+		"[%s](https://www.npmjs.com/package/%s)",
+		htmlContent, pkg,
 	)
 }
 
@@ -59,6 +85,19 @@ func LicenseMarkdown(pkg string) string {
 	)
 }
 
+// LicenseHtmlMarkdown
+//
+//	see: https://shields.io/badges/npm-2
+//
+// size: badges.MarkdownImgSizes
+func LicenseHtmlMarkdown(pkg, size string) string {
+	htmlContent := fmt.Sprintf(badges.MarkdownImageFmt, License(pkg), badges.MarkdownImgAlign, size, "npm license", "npm license")
+	return fmt.Sprintf(
+		"[%s](https://www.npmjs.com/package/%s)",
+		htmlContent, pkg,
+	)
+}
+
 // DownloadLatestTimes
 // See: https://shields.io/badges/npm-1
 func DownloadLatestTimes(pkg string) string {
@@ -74,6 +113,19 @@ func DownloadLatestTimesMarkdown(pkg string) string {
 	return fmt.Sprintf(
 		"[![npm download times](%s)](https://www.npmjs.com/package/%s)",
 		DownloadLatestTimes(pkg), pkg,
+	)
+}
+
+// DownloadLatestTimesHtmlMarkdown
+//
+//	see: https://shields.io/badges/npm-1
+//
+// size: badges.MarkdownImgSizes
+func DownloadLatestTimesHtmlMarkdown(pkg, size string) string {
+	htmlContent := fmt.Sprintf(badges.MarkdownImageFmt, DownloadLatestTimes(pkg), badges.MarkdownImgAlign, size, "npm download times", "npm download times")
+	return fmt.Sprintf(
+		"[%s](https://www.npmjs.com/package/%s)",
+		htmlContent, pkg,
 	)
 }
 
@@ -95,6 +147,19 @@ func DownloadLatestMonthMarkdown(pkg string) string {
 	)
 }
 
+// DownloadLatestMonthHtmlMarkdown
+//
+//	see: https://shields.io/badges/npm-1
+//
+// size: badges.MarkdownImgSizes
+func DownloadLatestMonthHtmlMarkdown(pkg, size string) string {
+	htmlContent := fmt.Sprintf(badges.MarkdownImageFmt, DownloadLatestMonth(pkg), badges.MarkdownImgAlign, size, "npm download month", "npm download month")
+	return fmt.Sprintf(
+		"[%s](https://www.npmjs.com/package/%s)",
+		htmlContent, pkg,
+	)
+}
+
 // Collaborators
 // See: https://shields.io/badges/npm-collaborators
 func Collaborators(pkg string) string {
@@ -110,5 +175,18 @@ func CollaboratorsMarkdown(pkg string) string {
 	return fmt.Sprintf(
 		"[![npm collaborators](%s)](https://www.npmjs.com/package/%s)",
 		Collaborators(pkg), pkg,
+	)
+}
+
+// CollaboratorsHtmlMarkdown
+//
+//	see: https://shields.io/badges/npm-collaborators
+//
+// size: badges.MarkdownImgSizes
+func CollaboratorsHtmlMarkdown(pkg, size string) string {
+	htmlContent := fmt.Sprintf(badges.MarkdownImageFmt, Collaborators(pkg), badges.MarkdownImgAlign, size, "npm collaborators", "npm collaborators")
+	return fmt.Sprintf(
+		"[%s](https://www.npmjs.com/package/%s)",
+		htmlContent, pkg,
 	)
 }

@@ -21,6 +21,18 @@ func GithubGoModVersionMarkdown(user, repo string) string {
 		GithubGoModVersion(user, repo), user, repo)
 }
 
+// GithubGoModVersionHtmlMarkdown
+//
+//	See https://shields.io/badges/git-hub-go-mod-go-version-subdirectory-of-monorepo
+//
+// size: badges.MarkdownImgSizes
+func GithubGoModVersionHtmlMarkdown(user, repo string, size string) string {
+	htmlContent := fmt.Sprintf(badges.MarkdownImageFmt, GithubGoModVersion(user, repo), badges.MarkdownImgAlign, size, "go mod version", "go mod version")
+	return fmt.Sprintf(
+		"[%s](https://github.com/%s/%s)",
+		htmlContent, user, repo)
+}
+
 // GithubGoDoc
 // See: https://pkg.go.dev
 func GithubGoDoc(user, repo string) string {
@@ -37,6 +49,18 @@ func GithubGoDocMarkdown(user, repo string) string {
 		GithubGoDoc(user, repo), user, repo)
 }
 
+// GithubGoDocHtmlMarkdown
+//
+//	See: https://pkg.go.dev
+//
+// size: badges.MarkdownImgSizes
+func GithubGoDocHtmlMarkdown(user, repo string, size string) string {
+	htmlContent := fmt.Sprintf(badges.MarkdownImageFmt, GithubGoDoc(user, repo), badges.MarkdownImgAlign, size, "GoDoc", "GoDoc")
+	return fmt.Sprintf(
+		"[%s](https://godoc.org/github.com/%s/%s)",
+		htmlContent, user, repo)
+}
+
 // GithubGoReportCard
 // See: https://goreportcard.com
 func GithubGoReportCard(user, repo string) string {
@@ -51,4 +75,16 @@ func GithubGoReportCardMarkdown(user, repo string) string {
 	return fmt.Sprintf(
 		"[![goreportcard](%s)](https://goreportcard.com/report/github.com/%s/%s)",
 		GithubGoReportCard(user, repo), user, repo)
+}
+
+// GithubGoReportCardHtmlMarkdown
+//
+//	see: https://goreportcard.com
+//
+// size: badges.MarkdownImgSizes
+func GithubGoReportCardHtmlMarkdown(user, repo string, size string) string {
+	htmlContent := fmt.Sprintf(badges.MarkdownImageFmt, GithubGoReportCard(user, repo), badges.MarkdownImgAlign, size, "goreportcard", "goreportcard")
+	return fmt.Sprintf(
+		"[%s](https://goreportcard.com/report/github.com/%s/%s)",
+		htmlContent, user, repo)
 }
